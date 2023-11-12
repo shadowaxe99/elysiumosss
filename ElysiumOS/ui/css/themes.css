@@ -1,0 +1,110 @@
+/* ElysiumOS Theme Stylesheet - themes.css */
+
+:root {
+  /* Color Scheme */
+  --primary-color: #5c6bc0; /* Primary color for the interface */
+  --secondary-color: #ffca28; /* Secondary color for highlights and accents */
+  --background-color: #f5f5f5; /* Background color for the app */
+  --text-color: #212121; /* Primary text color */
+  --text-secondary-color: #757575; /* Secondary text color */
+  --error-color: #d32f2f; /* Error color for warnings and alerts */
+
+  /* Typography */
+  --font-family: 'Roboto', sans-serif;
+  --font-size-normal: 16px;
+  --font-size-large: 24px;
+  --font-size-small: 14px;
+
+  /* Spacing */
+  --spacing-small: 8px;
+  --spacing-normal: 16px;
+  --spacing-large: 24px;
+  --spacing-xlarge: 32px;
+
+  /* Border Radius */
+  --border-radius-small: 4px;
+  --border-radius-normal: 8px;
+  --border-radius-large: 16px;
+
+  /* Box Shadows */
+  --box-shadow-light: 0 2px 4px 0 rgba(0,0,0,0.10);
+  --box-shadow-normal: 0 4px 8px 0 rgba(0,0,0,0.12);
+  --box-shadow-heavy: 0 8px 16px 0 rgba(0,0,0,0.15);
+}
+
+/* General Styles */
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-normal);
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+  margin: var(--spacing-normal) 0;
+}
+
+p {
+  color: var(--text-secondary-color);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: var(--spacing-small) var(--spacing-normal);
+  border-radius: var(--border-radius-normal);
+  cursor: pointer;
+  box-shadow: var(--box-shadow-light);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: darken(var(--primary-color), 10%);
+}
+
+/* Input Fields */
+input, select, textarea {
+  font-family: var(--font-family);
+  font-size: var(--font-size-normal);
+  color: var(--text-color);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: var(--spacing-small);
+  border-radius: var(--border-radius-small);
+  box-shadow: var(--box-shadow-light);
+}
+
+/* Navigation Styles */
+.navbar {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: var(--spacing-small) var(--spacing-normal);
+  box-shadow: var(--box-shadow-normal);
+}
+
+/* Footer Styles */
+.footer {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: var(--spacing-normal);
+  text-align: center;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  body {
+    padding: var(--spacing-small);
+  }
+
+  .navbar, .footer {
+    padding: var(--spacing-small);
+  }
+}
