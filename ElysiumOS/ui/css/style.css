@@ -1,0 +1,129 @@
+/* ElysiumOS Main Stylesheet */
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+/* Utility Classes */
+.hidden {
+  display: none;
+}
+
+/* Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+/* Navigation */
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav__item {
+  margin-right: 20px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+  color: #007bff;
+}
+
+/* Main Content */
+.main-content {
+  padding-top: 60px; /* Header height */
+}
+
+/* Footer */
+.footer {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #eaeaea;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Forms */
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* User Interface Components */
+#loginButton,
+#userProfileMenu,
+#aiAssistantChat,
+#gameArenaCanvas,
+#automationDashboard,
+#marketplaceSearch,
+#virtualWorldViewer,
+#nftGallery,
+#settingsToggle,
+#languageDropdown,
+#accessibilitySwitch,
+#pluginMarketplace,
+#backupRestoreButton,
+#cloudSyncIndicator {
+  /* Component-specific styles will be added here */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header__inner,
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav__item {
+    margin-bottom: 10px;
+  }
+}
